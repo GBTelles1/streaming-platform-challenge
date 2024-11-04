@@ -1,0 +1,23 @@
+.page {
+  width: 100%;
+}
+
+.carouselSections {
+  display: flex;
+  flex-direction: column;
+  gap: 3.75rem;
+
+  margin-top: -250px;
+  padding-bottom: 3.75rem;
+}
+
+.liveSection {
+  padding: 3.75rem 0rem 3.75rem 3.75rem;
+  background: #0d0d0d;
+}
+
+@media only screen and (max-width: 768px) {
+  .liveSection {
+    padding: 3.75rem 0rem;
+  }
+}

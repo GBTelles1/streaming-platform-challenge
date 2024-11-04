@@ -1,0 +1,163 @@
+header.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.25rem;
+
+  padding: 1.25rem 3.75rem;
+
+  background: linear-gradient(var(--black) 73%, var(--black) 0%);
+}
+
+.logo {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.rectangle {
+  width: 1.125rem;
+  height: 1.125rem;
+  border-radius: 4px;
+  background-color: #b0b0b0;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.submenu {
+  position: relative;
+}
+
+.menuItem,
+.submenu {
+  padding: 0.375rem 1rem;
+}
+
+.menuItem:hover,
+.submenu:hover {
+  color: #b0b0b0;
+}
+
+.submenuHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Arrow icon */
+.arrow {
+  width: min-content;
+  height: 7px;
+
+  border: solid var(--white);
+  border-width: 0 3px 3px 0;
+
+  padding: 3px;
+
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+
+  transition: all 0.2s ease;
+}
+
+.submenuList {
+  /* Submenu list closed */
+  display: none;
+  width: 100%;
+
+  position: absolute;
+  top: 25px;
+  left: 0;
+
+  color: var(--white);
+  list-style: none;
+  box-shadow: 0px 8px 16px 0px rgba(131, 131, 131, 0.2);
+  background: var(--black);
+
+  padding: 12px 16px;
+
+  gap: 0.5rem;
+  z-index: 1;
+}
+
+/* It opens the submenu */
+.submenu:hover .submenuList,
+.submenuList:hover {
+  display: flex;
+  flex-direction: column;
+}
+
+.submenuList a:hover {
+  color: #b0b0b0;
+}
+
+.profileAndSearch {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.searchButton {
+  background: transparent;
+  border: 0;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.searchButton:hover {
+  color: #b0b0b0;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0.5rem;
+
+  border-radius: 1.5rem;
+  background-color: #757575;
+  color: #121212;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+  header.wrapper {
+    font-size: 0.8rem;
+  }
+
+  .logo {
+    font-size: 1rem;
+  }
+
+  .rectangle {
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header.wrapper {
+    padding: 1rem;
+    font-size: 0.5rem;
+  }
+
+  .menuItem,
+  .submenu {
+    padding: 0.375rem 0.5rem;
+  }
+
+  .logo,
+  .searchButton {
+    display: none;
+  }
+}
