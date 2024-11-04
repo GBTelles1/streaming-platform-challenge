@@ -1,0 +1,32 @@
+.card {
+  width: 290px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.thumbnail {
+  position: relative;
+}
+
+.liveBadge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  border-radius: 16px;
+  padding: 0.25rem;
+  background: #f44336;
+}
+
+.categoryTitle {
+  color: #ffffffad;
+  font-size: 0.875rem;
+  line-height: 143%;
+  letter-spacing: 0.17px;
+}
+
+.videoTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 140%;
+}

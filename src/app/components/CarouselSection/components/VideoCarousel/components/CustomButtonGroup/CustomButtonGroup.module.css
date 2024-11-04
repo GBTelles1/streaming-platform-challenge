@@ -1,0 +1,55 @@
+.buttonGroup {
+  position: absolute;
+  right: 60px;
+  text-align: center;
+
+  display: flex;
+  align-items: baseline;
+  gap: 1.625rem;
+}
+
+.prevNextButtons {
+  display: flex;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+/* Arrow icon */
+.arrow {
+  width: min-content;
+  height: 7px;
+
+  border: solid var(--white);
+  border-width: 0 3px 3px 0;
+
+  padding: 3px;
+}
+
+.arrow.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.arrow.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+@media only screen and (max-width: 768px) {
+  .buttonGroup {
+    right: 16px;
+    gap: 1rem;
+    color: #ee3965;
+  }
+
+  .arrow {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .buttonGroup {
+    display: none;
+  }
+}

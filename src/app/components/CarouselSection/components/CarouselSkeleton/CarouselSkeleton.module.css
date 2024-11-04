@@ -1,0 +1,23 @@
+.card {
+  width: 290px;
+  height: 454px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.thumbnail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 290px;
+  height: 454px;
+  background: #69696920;
+}
+
+.categoryTitle {
+  color: #ffffffad;
+  font-size: 0.875rem;
+  line-height: 143%;
+  letter-spacing: 0.17px;
+}
